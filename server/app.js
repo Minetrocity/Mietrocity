@@ -2,6 +2,8 @@ var http = require('http');
 var path = require('path');
 var logger = require('morgan');
 var express = require('express');
+var compress = require('compression');
+var less = require('less-middleware');
 var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
@@ -18,6 +20,15 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+app.use(compress());
+
+app.use(less('client', {
+  debug: true,
+  dest: 'client',
+  force: true
+}));
+
 app.use(express.static('client'));
 
 app.use('/test', require('./routes/test/test.js'));

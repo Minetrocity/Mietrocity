@@ -2,8 +2,47 @@
 <html>
   <head>
     <title>Minetrocity</title>
+
+    <link rel="stylesheet" type="text/css" href="js/ext/angular-material/angular-material.css">
+    <link rel="stylesheet" type="text/css" href="js/ext/angular-loading-bar/build/loading-bar.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
   </head>
   <body>
-    Minetrocity
+    <ui-view class="fill-all"></ui-view>
+
+    <!-- JS Libraries -->
+    <script type="text/javascript" src="js/ext/lodash/lodash.js"></script>
+    <script type="text/javascript" src="js/ext/moment/moment.js"></script>
+
+    <!-- Angular -->
+    <script type="text/javascript" src="js/ext/angular/angular.js"></script>
+    <script type="text/javascript" src="js/ext/angular-aria/angular-aria.js"></script>
+    <script type="text/javascript" src="js/ext/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="js/ext/angular-material/angular-material.js"></script>
+
+    <!-- 3rd Party Angular -->
+    <script type="text/javascript" src="js/ext/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="js/ext/angular-loading-bar/build/loading-bar.js"></script>
+
+    <!-- Components -->
+    <!-- Constants -->
+    <script type="text/javascript" src="js/app/components/constants/constants.js"></script>
+    <!-- /Constants -->
+
+    <!-- Directives -->
+    <script type="text/javascript" src="js/app/components/directives/sidenav/sidenav.js"></script>
+    <script type="text/javascript" src="js/app/components/directives/toolbar/toolbar.js"></script>
+    <!-- /Directives -->
+    <!-- /Components -->
+
+    <!-- Pages -->
+    <script type="text/javascript" src="js/app/pages/login/login.js"></script>
+    <script type="text/javascript" src="js/app/pages/auth/auth.js"></script>
+    <script type="text/javascript" src="js/app/pages/auth/main/main.js"></script>
+    <!-- /Pages -->
+
+    <!-- App Definition/Bootstrapper -->
+    <script type="text/javascript" src="js/app/app.js"></script>
+
   </body>
 </html>
