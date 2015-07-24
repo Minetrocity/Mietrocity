@@ -1,9 +1,9 @@
-<<<<<<< HEAD
 var less = require('less-middleware');
 var path = require('path');
 var logger = require('morgan');
 var uuid = require('node-uuid');
 var config = require('config').server;
+var express = require('express');
 var compress = require('compression');
 var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
