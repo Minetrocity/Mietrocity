@@ -1,0 +1,19 @@
+{
+  "name": "minetrocity",
+  "version": "0.0.1",
+  "homepage": "https://github.com/minetrocity/minetrocity",
+  "authors": [
+    "Richie Preece <richie.preece@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular-animate": "~1.4.0",
+    "angular-loading-bar": "~0.7.1",
+    "angular-material": "~0.9.8",
+    "angular-aria": "~1.4.0",
+    "angular": "~1.4.0",
+    "lodash": "~3.9.3",
+    "moment": "~2.10.3",
+    "angular-ui-router": "~0.2.15"
+  }
+}

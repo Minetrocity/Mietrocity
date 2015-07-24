@@ -1,14 +1,14 @@
+<<<<<<< HEAD
+var less = require('less-middleware');
 var path = require('path');
 var logger = require('morgan');
 var uuid = require('node-uuid');
-var express = require('express');
 var config = require('config').server;
 var compress = require('compression');
 var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
-var couchDBStore = require('connect-couchdb')(session);
 
 var app = express();
 var http = require('http').Server(app);
@@ -40,6 +40,7 @@ if(!isProduction()) {
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());

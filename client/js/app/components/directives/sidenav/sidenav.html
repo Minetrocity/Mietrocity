@@ -1,0 +1,16 @@
+<md-sidenav class="md-sidenav-left md-whiteframe-z2 ng-isolate-scope" md-is-locked-open="$mdMedia('gt-md')" md-component-id="sidenav">
+  <md-toolbar class="md-whiteframe-glow-z2">
+    <h1 class="md-toolbar-tools" hide-lt-lg>MT</h1>
+  </md-toolbar>
+
+  <md-divider></md-divider>
+
+  <md-content flex>
+    {{vm2.test}}
+    <md-list>
+      <md-button ng-repeat="nav in vm2.navigation" ng-class="{'active': nav.active}" ng-click="vm2.navigate(nav)">
+        <p class="no-select">{{::nav.title}}</p>
+      </md-button>
+    </md-list>
+  </md-content>
+</md-sidenav>
