@@ -1,0 +1,49 @@
+{
+  "name": "cacheparking",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^0.8.1",
+    "body-parser": "~1.10.2",
+    "compression": "^1.4.0",
+    "config": "^1.10.0",
+    "connect-busboy": "0.0.2",
+    "connect-couchdb": "^1.0.0",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.1.1",
+    "express": "~4.11.1",
+    "express-session": "^1.10.2",
+    "less-middleware": "^1.0.4",
+    "lodash": "^3.2.0",
+    "minetrocity-nodb": "^1.0.0",
+    "moment": "^2.9.0",
+    "morgan": "~1.5.1",
+    "multer": "^0.1.8",
+    "node-schedule": "^0.1.16",
+    "node-uuid": "^1.4.3",
+    "q": "^1.1.2",
+    "request": "^2.53.0",
+    "serve-favicon": "~2.2.0",
+    "socket.io": "^1.3.6"
+  },
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-angular-templatecache": "^1.5.0",
+    "gulp-bower": "0.0.10",
+    "gulp-concat": "^2.5.2",
+    "gulp-html-replace": "^1.4.4",
+    "gulp-jshint": "^1.9.2",
+    "gulp-less": "^3.0.1",
+    "gulp-minify-css": "^0.5.1",
+    "gulp-minify-html": "^1.0.0",
+    "gulp-ng-annotate": "^0.5.2",
+    "gulp-sloc": "richiepreece/gulp-sloc.git#master",
+    "gulp-uglify": "^1.1.0",
+    "gulp-zip": "^2.0.3",
+    "jshint-stylish": "^1.0.1"
+  }
+}
